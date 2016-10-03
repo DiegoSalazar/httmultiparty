@@ -1,10 +1,6 @@
-[![Build Status](https://travis-ci.org/jwagener/httmultiparty.svg?branch=v0.3.14)](https://travis-ci.org/jwagener/httmultiparty)
+## Forked
 
-
-[![Gem Version](https://badge.fury.io/rb/httmultiparty.svg)](http://badge.fury.io/rb/httmultiparty)
-
-
-[![Code Climate](https://codeclimate.com/github/jwagener/httmultiparty/badges/gpa.svg)](https://codeclimate.com/github/jwagener/httmultiparty)
+This version was forked in order to change `MimeMagic.by_path` to `MimeMagic.by_magic` when detecting an uploaded file's mime type. The latter was failing on tempfiles with no extensions but the latter correctly identifies the mime type for those.
 
 ## Description
 

@@ -5,7 +5,7 @@ $LOAD_PATH.unshift lib unless $LOAD_PATH.include?(lib)
 require 'httmultiparty/version'
 
 Gem::Specification.new do |s|
-  s.name        = 'httmultiparty'
+  s.name        = 'httmultipartymagic'
   s.version     = HTTMultiParty::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Johannes Wagener']
