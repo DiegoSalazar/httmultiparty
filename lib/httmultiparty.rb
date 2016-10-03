@@ -15,7 +15,7 @@ module HTTMultiParty
     else
       filename =  File.split(file.path).last
     end
-    content_type = detect_mime_type ? MimeMagic.by_path(filename) : 'application/octet-stream'
+    content_type = detect_mime_type ? MimeMagic.by_magic(file) : 'application/octet-stream'
     UploadIO.new(file, content_type, filename)
   end
 
